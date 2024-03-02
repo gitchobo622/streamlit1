@@ -13,7 +13,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(message.encode())
 
-def run(server_class=HTTPServer, handler_class=RequestHandler, port=8080):
+def run(server_class=HTTPServer, handler_class=RequestHandler, port=5000):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
     print(f'Starting httpd on port {port}...')
