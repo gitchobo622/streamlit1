@@ -20,4 +20,4 @@ def run(server_class=HTTPServer, handler_class=RequestHandler, port=5000):
     httpd.serve_forever()
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    00-text.run(host='0.0.0.0', port=5000)
