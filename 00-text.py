@@ -8,7 +8,7 @@ st.title('이것은 타이틀 입니다')
 st.title('스마일 :sunglasses:')
 
 # Header 적용
-st.header('헤더를 입력할 수 있어요! :sparkles:')
+st.header('헤더입니까 지금! :sparkles:')
 
 # Subheader 적용
 st.subheader('이것은 subheader 입니다')
