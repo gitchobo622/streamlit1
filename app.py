@@ -13,11 +13,11 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(message.encode())
 
-def run(server_class=HTTPServer, handler_class=RequestHandler, port=8080):
+def run(server_class=HTTPServer, handler_class=RequestHandler, port=8502):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
     print(f'Starting httpd on port {port}...')
     httpd.serve_forever()
 
 if __name__ == "__main__":
-    run(host='0.0.0.0', port=8502)
+    app.run(host='0.0.0.0', port=8502)
